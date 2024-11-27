@@ -2,10 +2,11 @@ from flask import Flask, render_template, request
 import pickle
 import re
 import string
+import nltk
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
-import nltk
+
 
 # Fix for punkt issue: Ensure correct installation and set path explicitly
 nltk.data.path.append("C:/nltk_data")  # Change this to your desired directory if needed
